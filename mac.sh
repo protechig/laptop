@@ -37,15 +37,17 @@ brew cask install screaming-frog-seo-spider
 brew cask install filezilla
 brew cask install dropbox
 brew cask install codekit
-brew cask install creative cloud
+brew cask install adobe-creative-cloud 
 brew cask install microsoft-office
 brew cask install lastpass
 brew cask install sketch
 
-#install default ruby gems
+# install default ruby gems
 gem install sass
 gem install bourbon
 gem install neat
 gem install bitters
 
-
+# ZSH goodies
+https://github.com/robbyrussell/oh-my-zsh
+chsh -s /usr/local/bin/zsh

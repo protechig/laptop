@@ -11,7 +11,6 @@ brew doctor
 
 brew install caskroom/cask/brew-cask
 
-brew install zsh
 brew install git
 brew install vim
 brew install tmux
@@ -49,5 +48,5 @@ gem install neat
 gem install bitters
 
 # ZSH goodies
-git clone https://github.com/robbyrussell/oh-my-zsh
-chsh -s /usr/local/bin/zsh
+git clone https://github.com/robbyrussell/oh-my-zsh ~/oh-my-zsh
+chsh -s /bin/zsh

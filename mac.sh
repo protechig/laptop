@@ -22,6 +22,7 @@ brew install wget
 brew install ssh-copy-id
 brew install reattach-to-user-namespace
 
+brew cask instal iterm2
 brew cask install sublime-text
 brew cask install atom
 brew cask install google-chrome

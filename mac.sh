@@ -52,3 +52,8 @@ gem install bitters
 # ZSH goodies
 git clone https://github.com/robbyrussell/oh-my-zsh ~/oh-my-zsh
 chsh -s /bin/zsh
+
+# Install Powerline Source Code Pro
+git clone https://github.com/powerline/fonts.git ~/
+cd ~/fonts
+./install.sh

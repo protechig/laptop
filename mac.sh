@@ -20,7 +20,7 @@ brew install node
 brew install python
 brew install node
 brew install wget
-brew isntall ssh-copy-id
+brew install ssh-copy-id
 brew install reattach-to-user-namespace
 
 brew cask install sublime-text

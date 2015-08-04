@@ -42,4 +42,10 @@ brew cask install microsoft-office
 brew cask install lastpass
 brew cask install sketch
 
+#install default ruby gems
+gem install sass
+gem install bourbon
+gem install neat
+gem install bitters
+
 

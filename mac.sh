@@ -25,6 +25,7 @@ brew install reattach-to-user-namespace
 brew cask install sublime-text
 brew cask install atom
 brew cask install google-chrome
+brew cask install google-drive
 brew cask install firefox
 brew cask install virtualbox
 brew cask install vagrant

@@ -49,5 +49,5 @@ gem install neat
 gem install bitters
 
 # ZSH goodies
-https://github.com/robbyrussell/oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh
 chsh -s /usr/local/bin/zsh

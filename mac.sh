@@ -22,7 +22,7 @@ brew install wget
 brew install ssh-copy-id
 brew install reattach-to-user-namespace
 
-brew cask instal iterm2
+brew cask install iterm2
 brew cask install sublime-text
 brew cask install atom
 brew cask install google-chrome
@@ -38,7 +38,7 @@ brew cask install screaming-frog-seo-spider
 brew cask install filezilla
 brew cask install dropbox
 brew cask install codekit
-brew cask install adobe-creative-cloud 
+brew cask install adobe-creative-cloud
 brew cask install microsoft-office
 brew cask install lastpass
 brew cask install sketch

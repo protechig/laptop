@@ -1,44 +1,71 @@
-#!/bin/sh
-
-# Requires Os X Command Line Tools to be installed.
-# Run `xcode-select --install` to do so
-
-
-# Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Check for Homebrew,
+# Install if we don't have it
+if test ! $(which brew); then
+  echo "Installing homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew doctor
+brew install coreutils
+brew install findutils
 
+
+brew tap homebrew/dupes
+brew tap homebrew/php
+
+$PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 # Install Packages
+binaries = (
+  git
+  vim
+  tmux
+  htop-osx
+  python
+  node
+  wget
+  ssh-copy-id
+  nginx
+  mariadb
+  sqlite
+  python3
+  brew install --without-apache --with-fpm --with-mysql php56
+  phpmyadmin
+)
 
-brew install git
-brew install vim
-brew install tmux
-brew install htop-osx
-brew install python
-brew install node
-brew install wget
-brew install ssh-copy-id
+echo "installing binaries..."
+brew install ${binaries[@]}
+
+brew cleanup
+
 
 # Install Cask & Dependencies
 brew install caskroom/cask/brew-cask
 
-brew cask install sublime-text
-brew cask install atom
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install firefox
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install slack
-brew cask install vlc
-brew cask install league-of-legends
-brew cask install minecraft
-brew cask install screaming-frog-seo-spider
-brew cask install filezilla
-brew cask install dropbox
-brew cask install codekit
-brew cask install lastpass
+apps = (
+  atom
+  google-chrome
+  google-drive
+  firefox
+  virtualbox
+  vagrant
+  slack
+  vlc
+  league-of-legends
+  minecraft
+  dropbox
+  codekit
+  lastpass
+  screenflow
+  microsoft-office365
+  adobe-photoshop-cc
+  skype
+  filezilla
+)
+
+echo "installing apps..."
+brew cask install --appdir="/Applications" ${apps[@]}
+
+
 
 # ZSH goodies
 git clone https://github.com/robbyrussell/oh-my-zsh ~/oh-my-zsh

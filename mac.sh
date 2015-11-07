@@ -13,9 +13,8 @@ brew install findutils
 brew tap homebrew/dupes
 brew tap homebrew/php
 
-$PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 # Install Packages
-binaries = (
+binaries=(
   git
   vim
   tmux
@@ -41,7 +40,7 @@ brew cleanup
 # Install Cask & Dependencies
 brew install caskroom/cask/brew-cask
 
-apps = (
+apps=(
   atom
   google-chrome
   google-drive
